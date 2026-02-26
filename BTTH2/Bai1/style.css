@@ -1,0 +1,77 @@
+body
+{
+    margin: 0;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+
+#message
+{
+    border: 2px solid #ddd;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+#message h3
+{
+    margin: 0 0 20px 0;
+    font-size: 20px;
+    font-weight: normal;
+}
+
+#message .row
+{
+    display: flex;
+    gap: 20px;
+    margin-bottom: 15px;
+}
+
+#message input,
+.inputmessage
+{
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+}
+
+#message .row input
+{
+    margin-bottom: 0;
+}
+
+#message .inputmessage
+{
+    resize: vertical;
+    font-family: Arial, sans-serif;
+}
+
+#message .click
+{
+    background-color: #5fade2;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+#message .footer
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#message .footer p
+{
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+}

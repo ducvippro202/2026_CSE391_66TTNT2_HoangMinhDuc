@@ -1,0 +1,201 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: transparent;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+}
+
+#page-logo a {
+  font-family: 'Oleo Script', cursive;
+  font-size: 28px;
+  color: #f7d34d;
+  text-decoration: none;
+  font-weight: 700;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+nav a {
+  color: #f7d34d;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 8px 15px;
+  transition: all 0.3s;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+nav a:hover {
+  background-color: rgba(247, 211, 77, 0.3);
+}
+
+
+#hero {
+  background-image: url('extra-files/cities2/ocean.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+#hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+#hero-content {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+  background: rgba(51, 51, 51, 0.85);
+  padding: 40px 60px;
+  border-radius: 10px;
+}
+
+#hero-content h1 {
+  color: white;
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 15px;
+  letter-spacing: 2px;
+}
+
+#hero-content p {
+  color: white;
+  font-size: 16px;
+  margin-bottom: 25px;
+  font-weight: 300;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-color: #f7d34d;
+  color: #333;
+  text-decoration: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  font-weight: 700;
+  display: inline-block;
+  transition: all 0.3s;
+}
+
+.btn:hover {
+  background-color: #e6c240;
+  transform: translateY(-2px);
+}
+
+
+#highlights {
+  background-color: #c8e7e7;
+  padding: 50px 40px;
+}
+
+#highlights h2 {
+  text-align: center;
+  font-size: 28px;
+  margin-bottom: 40px;
+  color: #333;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+#destinations {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.destination {
+  flex: 0 0 calc(33.333% - 20px);
+  max-width: 350px;
+}
+
+.destination img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}
+
+.destination p {
+  text-align: center;
+  margin-top: 15px;
+  font-size: 18px;
+  color: #333;
+  font-weight: 300;
+}
+
+.destination strong {
+  font-weight: 700;
+  color: #077e7e;
+}
+
+
+footer {
+  background-color: #1c1c1c;
+  padding: 30px;
+  text-align: center;
+}
+
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+footer img {
+  width: 50px;
+  height: 50px;
+  transition: transform 0.3s;
+}
+
+footer img:hover {
+  transform: scale(1.1);
+}
+
+
+@media (max-width: 768px) {
+  .destination {
+    flex: 0 0 100%;
+  }
+  
+  #hero-content h1 {
+    font-size: 24px;
+  }
+  
+  header {
+    flex-direction: column;
+    gap: 15px;
+  }
+}
